@@ -1,123 +1,49 @@
 <!DOCTYPE html>
+
 <head>
     <title>Google</title>
-    <style>
-        a {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            text-decoration: none;
-            font-weight: bold;
-            color: black;   
-        }
-        
-        a:hover{
-            background-color: rgb(219, 177, 121);
-        }
-
-        ul{
-            display: flex;
-            list-style: none;
-            justify-content: space-evenly;
-        }
-        footer{
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-            left: 0;
-            background-color: rgb(221, 216, 216);
-            padding: 10px;
-        }
-        main{
-            display: flexbox;
-            width: 100%;
-            align-items: center;
-        }
-
-        #logo{
-            display: flex;
-            justify-content: center;
-            margin-top: 50px;
-        }
-
-        #function{
-            display: flex;
-            justify-content: center;
-        }
-
-        [type="button"]{
-            padding: 10px;
-            border-radius: 10px;
-            box-shadow: 5px 2px 20px rgb(196, 196, 196);
-            font-size: 16pt;
-            margin: 10px;
-            
-
-        }
-        [type="button"]:hover{
-                    
-                    animation-name: button;
-                    animation-duration: 1s;
-                    animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1) ;
-        }
-        @keyframes button {
-            100%{
-                background-color: blue;
-                font-size:18pt;
-            }
-        }
-        
-
-        #search-box{
-            border-style: solid;
-            border-width: 2px;
-            border-radius: 20px;
-            width: 500px;
-            padding: 15px;
-            font-size: 14pt;
-            margin-top: 20px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="mystyle.css">
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Store</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Sign Up</a></li>
-        </ul>
-    </nav>
+    <header>
+        <div id="header-left">
+            <ul>
+                <li>About</li>
+                <li>Store</li>
+            </ul>
+        </div>
+        <div id="header-right">
+            <ul>
+                <li>Login</li>
+                <li id="btn-sign-up">Sign up</li>
+            </ul>
+        </div>
+    </header>
 
     <main>
-        <div id="logo">
-            <img width="500px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/736px-Google_2015_logo.svg.png" alt="google-logo">
-        </div>
-        <div id="function">
-            <form>
+        <form action="">
+            <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Google_Images_2015_logo.svg/2560px-Google_Images_2015_logo.svg.png"
+                    alt="Google Logo" id="logo">
                 <div>
-                    <input type="text" placeholder="Enter your search here" id="search-box">
+                    <input type="text" name="search" id="search-box" placeholder="Enter your search here!">
                 </div>
-                <div style="display: flex; justify-content: space-around;">
-                    <input type="button" id="search" value="Google Search">
-                    <input type="button" id="feeling-lucky" value="Feeling lucky!">
-
+                <div id="btn-group">
+                    <input type="button" value="Submit">
+                    <input type="button" value="I'm feeling lucky!">
                 </div>
-            </form>
-
-        </div>
+            </div>
+        </form>
     </main>
 
     <footer>
-        <ul>
-                <li><a href="#">Ad</a></li>
-                <li><a href="#">Biz</a></li>
-                <li><a href="#">How Search works</a></li>
-                <li><a href="#">Carbon neutral</a></li>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Settings</a></li> 
-        </ul>
+        <div>
+            <p>Advertising</p>
+            <p>Business</p>
+            <p>Carbon neutral since 2010</p>
+            <p>Terms</p>
+            <p>Settings</p>
+        </div>
     </footer>
 </body>
