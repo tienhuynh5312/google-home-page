@@ -103,7 +103,7 @@ main form [type="button"] {
     }
 
     footer div {
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: flex-end;
         flex-wrap: wrap;
