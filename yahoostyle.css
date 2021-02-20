@@ -1,0 +1,33 @@
+.bg-red{
+    background-color: red;
+}
+
+.bg-green{
+    background-color: green;
+}
+
+.bg-gray{
+    background-color: gray;
+}
+
+.bg-blue{
+    background-color: blue;
+}
+
+.sidebar-section{
+    position:absolute;
+    top: 0;
+    left: 0;    
+    width: 100%;
+    background-color: rgb(163, 163, 163);
+}
+
+.sidebar-sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+#ui{
+    position: relative;
+}
